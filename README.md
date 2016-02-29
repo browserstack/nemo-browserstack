@@ -29,7 +29,7 @@ To run the tests, execute: `node nemo.js`
 
 
 ###Further Reading
-[Nemo](https://nemo.js.org)
-[BrowserStack documentation for Automate](https://www.browserstack.com/automate/node)
+- [Nemo](https://nemo.js.org)
+- [BrowserStack documentation for Automate](https://www.browserstack.com/automate/node)
 
 Happy Testing!
