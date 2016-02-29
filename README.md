@@ -1,15 +1,14 @@
-# Example usage of nemo automation framework + browserstack
+nemo-browserstack
+=========
 
-Install dependencies from within this directory `npm install`
+This repository provides information and helpful tweaks to run your Nemo tests on the BrowserStack selenium cloud infrastructure.
 
-## Run against a local browser
+###Setup
+Install npm
+Install dependencies using `npm install`.
 
-```shell
-$ node nemo.js
-```
 
-## Run in the browserstack cloud
-
+###Configuration
 Set browserstack environment variables as in the below shell example
 
 ```shell
@@ -25,6 +24,12 @@ Run node command with NODE_ENV=browserstack to engage the `browserstack.json` ov
 $ NODE_ENV=browserstack node nemo.js
 ```
 
-## For more information on nemo
+###Run tests
+To run the tests, execute: `node nemo.js`
 
-Go to https://nemo.js.org
+
+###Further Reading
+[Nemo](https://nemo.js.org)
+[BrowserStack documentation for Automate](https://www.browserstack.com/automate/node)
+
+Happy Testing!
