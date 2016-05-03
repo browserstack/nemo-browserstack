@@ -1,0 +1,27 @@
+{
+  "driver": {
+    "builders": {
+      "usingServer": [ "http://hub.browserstack.com/wd/hub" ],
+      "withCapabilities": [{
+        "browserstack.user": "env:BROWSERSTACK_USERNAME",
+        "browserstack.key": "env:BROWSERSTACK_ACCESS_KEY",
+        "browserstack.local": true,
+        "build": "Nemo Sample Tests",
+        "name": "Nemo local tests",
+        "os": "Windows",
+        "os_version": "10",
+        "browserName": "firefox",
+        "browser_version": "45"
+      }]
+    },
+    "plugins": {
+      "view": {
+        "module": "nemo-view",
+        "arguments": [ "path:locator" ]
+      }
+    },
+    "data": {
+      "baseUrl": "https://www.google.com"
+    }
+  }
+}

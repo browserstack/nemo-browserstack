@@ -1,18 +1,26 @@
 {
   "driver": {
     "builders": {
+      "usingServer": [ "http://hub.browserstack.com/wd/hub" ],
       "withCapabilities": [{
-        "browserName": "firefox"
+        "browserstack.user": "env:BROWSERSTACK_USERNAME",
+        "browserstack.key": "env:BROWSERSTACK_ACCESS_KEY",
+        "build": "Nemo Sample Tests",
+        "name": "Nemo sample test",
+        "os": "OS X",
+        "os_version": "El Capitan",
+        "browserName": "chrome",
+        "browser_version": "48"
       }]
     }
   },
   "plugins": {
     "view": {
       "module": "nemo-view",
-      "arguments": ["path:locator"]
+      "arguments": [ "path:locator" ]
     }
   },
   "data": {
-    "baseUrl": "https://www.paypal.com"
+    "baseUrl": "https://www.google.com"
   }
 }
