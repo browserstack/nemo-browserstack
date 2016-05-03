@@ -38,6 +38,4 @@ These can be found on the automate accounts page on [BrowserStack](https://www.b
 
 The [Code Generator](https://www.browserstack.com/automate/node#setting-os-and-browser) can come in very handy when specifying the capabilities especially for mobile devices.
 
-The latest version of protractor needs the ‘browserName’ capability mentioned for tests to be executed.
-
 Happy Testing!
