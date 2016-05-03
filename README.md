@@ -1,6 +1,6 @@
 # Nemo-browserstack
 
-Run [Nemo] scripts on BrowserStack.
+Run [Nemo](https://nemo.js.org) scripts on BrowserStack.
 
 ### Clone the repo
 
