@@ -1,18 +1,19 @@
 {
-  "name": "nemo-browserstack-example",
-  "version": "1.0.0",
-  "description": "Nemo and Browserstack integration example",
-  "main": "nemo.js",
+  "name": "nemo-browserstack",
+  "version": "0.1.0",
+  "description": "An example module to run protractor tests on browserstack",
   "scripts": {
-    "test": "node nemo.js"
+    "test": "node nemo.js",
+    "test_local": "node scripts/test_local.js"
   },
   "keywords": [
     "Nemo",
     "selenium-webdriver",
     "browserstack"
   ],
-  "author": "Matt Edelman <mattedelman@gmail.com>",
+  "author": "BrowserStack",
   "dependencies": {
+    "browserstack-local": "^0.1.0",
     "nemo": "^1.0.6",
     "nemo-view": "^1.2.0"
   }

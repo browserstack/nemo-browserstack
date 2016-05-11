@@ -1,35 +1,41 @@
-nemo-browserstack
-=========
+# Nemo-browserstack
 
-This repository provides information and helpful tweaks to run your Nemo tests on the BrowserStack selenium cloud infrastructure.
+Run [Nemo](https://nemo.js.org) scripts on BrowserStack.
 
-###Setup
-Install npm
-Install dependencies using `npm install`.
+### Clone the repo
+
+`git clone https://github.com/browserstack/nemo-browserstack.git`
+
+### Install dependencies
+
+Navigate to appropriate directory for testing and then install the dependencies by running
+
+`npm install`
+
+### BrowserStack Authentication
+
+Export the environment variables for the username and access key of your BrowserStack account.
+These can be found on the automate accounts page on [BrowserStack](https://www.browserstack.com/accounts/automate)
+
+`export BROWSERSTACK_USERNAME=<browserstack-username>`
+
+`export BROWSERSTACK_KEY=<browserstack-access-key>`
+
+### Run the tests
+
+ - To start a single test run: `npm test`
+ - To start local tests run: `npm run test_local`
 
 
-###Configuration
-Set browserstack environment variables as in the below shell example
+-----
 
-```shell
-$ export BSTK_USER=myusername1
-$ export BSTK_KEY=aa4235ssdda
-$ export BSTK_BROWSER=chrome
-$ export BSTK_VERSION=22.0
-```
+#### Further Reading
 
-Run node command with NODE_ENV=browserstack to engage the `browserstack.json` override
-
-```shell
-$ NODE_ENV=browserstack node nemo.js
-```
-
-###Run tests
-To run the tests, execute: `node nemo.js`
-
-
-###Further Reading
 - [Nemo](https://nemo.js.org)
 - [BrowserStack documentation for Automate](https://www.browserstack.com/automate/node)
+
+#### How to specify the capabilities
+
+The [Code Generator](https://www.browserstack.com/automate/node#setting-os-and-browser) can come in very handy when specifying the capabilities especially for mobile devices.
 
 Happy Testing!
