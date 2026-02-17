@@ -14,7 +14,7 @@
   "author": "BrowserStack",
   "dependencies": {
     "browserstack-local": "^0.1.0",
-    "nemo": "^1.0.6",
+    "nemo": "^1.1.2",
     "nemo-view": "^1.2.0"
   }
 }
